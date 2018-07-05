@@ -7,4 +7,4 @@ docker run -itd -p 8888:8888 -p 50022:22 \
 -e HA_NAMESERVICES=nameservice1 \
 -e HA_NAMENODES_RPCADDRESS=namenode52#hadoop2:8020,namenode74#hadoop3:8020 \
 -v /opt/tensorflow_docker/kb:/opt/kb \
-dinfo.cn/tensorflow:1.6.0           
+dinfo.cn/tensorflow:1.4.1           
