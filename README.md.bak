@@ -14,8 +14,9 @@
 	
 其中tensorflowrun.sh脚本内容如下：
 ``` bash
-docker run -dit -p 8888:8888 -p 50022:22 \
+docker run -d \
 --name=dinfo-tensorflow \
+--net=host \
 -e KERBEROS_KDC=hadoop2 \
 -e KERBEROS_ADMIN_SERVER=hadoop2 \
 -e KERBEROS_EXAMPLE_COM=EXAMPLE.COM \
